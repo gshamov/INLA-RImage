@@ -25,6 +25,7 @@ From:  rocker/r-ver:latest
        #sleep 10
 
         R -e 'install.packages("INLA", repos="https://inla.r-inla-download.org/R/stable")'
+        R -e 'update.packages("INLA", dep=TRUE)'
         mkdir /global
         mkdir /global/scratch
         mkdir /scratch
